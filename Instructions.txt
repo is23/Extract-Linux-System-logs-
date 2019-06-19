@@ -1,0 +1,17 @@
+Instructions on how the project is organized and works
+
+1. First the file "logProject.sh" takes the content from syslog and basically put it into the mysql table
+
+2. Then the "mainForm.php" connects to a database where the table is holding the content and then display it on a webpage (screenshot of the webpage incuded)
+
+Files included:
+	
+	1. "saveLog.txt" where the original content of syslog is created by the first grep 		   command in "logProject.sh"
+	2. "severity.txt", "tag.txt", "time.txt", "description.txt" are seperate files for each 	   labeled content.
+	3. "temptale.csv" is created from the content of above files to easily extract data to a 	    mysql table
+	4. "logProject.sh", "mainForm.php" main code files
+	5. Screenshot of the output of webpage.
+	6. "account.php" is a template needs to be filled in with information about you mysql 		   database
+
+Extra tools used:
+	1. Apache server in order to run the php code and display the output on webpage
